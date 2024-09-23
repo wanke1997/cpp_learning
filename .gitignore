@@ -1,0 +1,11 @@
+# Ignore the bin/ directory
+bin/
+
+# Ignore the output/ directory
+output/
+
+# Optional: Ignore compiled object files, executables, and debug logs
+*.o
+*.out
+*.exe
+*.log
