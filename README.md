@@ -1,4 +1,4 @@
-C++ learning note
+# C++ learning note
 
 ## installation for WSL
 1. install g++ on WSL
