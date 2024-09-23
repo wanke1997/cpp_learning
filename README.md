@@ -1,6 +1,6 @@
 # C++ learning note
 
-## installation for WSL
+## Installation for WSL
 1. install g++ on WSL
 ```bash
 sudo apt update
