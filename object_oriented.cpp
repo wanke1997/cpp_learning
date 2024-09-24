@@ -7,7 +7,7 @@ using namespace std;
 class Node {
 public:
     char ch;
-    // children pointers
+    // there are 26 Node pointers in the children array
     Node * children[26];
     // default constructor
     Node () {
@@ -23,7 +23,7 @@ public:
             children[i] = nullptr;
         }
     }
-    // destructor to recycle objects safely
+    // destructor to delete objects safely
     ~Node() {
         for(int i=0;i<26;i++) {
             if(children[i] != nullptr) {
@@ -46,8 +46,16 @@ int main() {
     for(int i=0;i<26;i++) {
         arr[i] = i;
         cout << arr[i] << " ";
+        if(i%2==0) {
+            node_ref -> children[i] = new Node('a'+i);
+        }
     }
     cout << "happy ending" << endl;
     // delete objects in heap to prevent memory leak
     delete node_ref;
+
+    int a[26] = {0,0};
+    for(int i=0;i<26;i++) {
+        cout << a[i] << " ";
+    }
 }
