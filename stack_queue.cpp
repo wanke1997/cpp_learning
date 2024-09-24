@@ -51,7 +51,7 @@ int main() {
     cout << "stack top:" << stk_top << endl;
     stk.pop();
 
-    // 4. priority queue, it is contained in the <queue> header. The default is big heap
+    // 4. priority queue, it is contained in the <queue> header. The default is BIG heap
     // in the <>, there are 3 parameters: data type, container type (default is vector), and compare struct with operator overloading.
     priority_queue<int, vector<int>, Compare> pq;
     vector<int> v =  {1,3,4,2,-1};
