@@ -5,6 +5,7 @@
         "ostream": "cpp",
         "vector": "cpp",
         "array": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "algorithm": "cpp"
     }
 }
