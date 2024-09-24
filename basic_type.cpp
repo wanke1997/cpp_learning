@@ -39,4 +39,10 @@ int main() {
     // string also has iterators, and we can call std::reverse() to reverse it
     reverse(res_string.begin(), res_string.end());
     cout << res_string << endl;
+    // std::isupper(), std::isalnum(), etc...
+    isalnum('1'); // true
+    isupper('1'); // false
+    // std::tolower()
+    char r_lower = tolower('A');
+    cout << r_lower << endl;
 }
