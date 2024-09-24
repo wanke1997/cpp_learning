@@ -28,6 +28,7 @@ int main() {
     for(auto pt = map.begin(); pt != map.end(); pt++) {
         cout << "debug:" << pt->first << " " << pt->second << endl;
     }
+    // please use this one
     for (const auto& pair : map) {
         cout << pair.first << " -> " << pair.second << endl;
     }
@@ -49,4 +50,10 @@ int main() {
     } else {
         cout << "not found in the set" << endl;
     } // not found in the set
+    // 4. traverse the set
+    cout << "set: ";
+    for(const auto& e : set) {
+        cout << e << " ";
+    }
+    cout << endl;
 }
