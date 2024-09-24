@@ -6,14 +6,29 @@ using namespace std;
 
 class Node {
 public:
-    // pointer definition
-    Node * children[26];
     char ch;
-    Node(char ch) {
-        // "this" is a pointer, use "->"" to access members
-        this -> ch = ch;
+    // children pointers
+    Node * children[26];
+    // default constructor
+    Node () {
+        ch = ' ';
         for(int i=0;i<26;i++) {
-            this -> children[i] = nullptr;
+            children[i] = nullptr;
+        }
+    }
+    // constructor with a parameter
+    Node (char _ch) {
+        ch = _ch;
+        for(int i=0;i<26;i++) {
+            children[i] = nullptr;
+        }
+    }
+    // destructor to recycle objects safely
+    ~Node() {
+        for(int i=0;i<26;i++) {
+            if(children[i] != nullptr) {
+                delete children[i];
+            }
         }
     }
 };
@@ -32,5 +47,7 @@ int main() {
         arr[i] = i;
         cout << arr[i] << " ";
     }
-    cout << endl;
+    cout << "happy ending" << endl;
+    // delete objects in heap to prevent memory leak
+    delete node_ref;
 }
