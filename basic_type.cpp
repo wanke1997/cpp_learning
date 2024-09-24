@@ -45,4 +45,7 @@ int main() {
     // std::tolower()
     char r_lower = tolower('A');
     cout << r_lower << endl;
+    // substring starting at 0 with length of 3, C++ doesn't have .startswith() or .endswith()
+    string ss = s.substr(0, 3);
+    cout << "substring of s: " << ss << endl;
 }
