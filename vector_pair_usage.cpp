@@ -45,4 +45,14 @@ int main() {
     while(next_permutation(v.begin(), v.end())) {
         cout << v[0] << v[1] << v[2] << endl;
     }
+
+    // another container: pair
+    pair<int, vector<int> > p(0, v);
+    cout << "first: " << p.first << endl;
+    cout << "second: ";
+    // use const auto& to traverse a vector, very useful in modern C++
+    for(const auto & e:p.second) {
+        cout << e << " ";
+    }
+    cout << endl;
 }
