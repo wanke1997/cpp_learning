@@ -45,7 +45,9 @@ int main() {
     while(next_permutation(v.begin(), v.end())) {
         cout << v[0] << v[1] << v[2] << endl;
     }
-
+    // 8. fill
+    fill(v.begin(), v.end(), 119);
+    output_vector(v);
     // another container: pair
     pair<int, vector<int> > p(0, v);
     cout << "first: " << p.first << endl;
