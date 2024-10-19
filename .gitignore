@@ -1,0 +1,15 @@
+# Ignore the bin/ directory
+bin/
+
+# Ignore the output/ directory
+output/
+
+# ignore .vscode
+.vscode/
+
+# Optional: Ignore compiled object files, executables, and debug logs
+*.o
+*.out
+*.exe
+*.log
+*.json
