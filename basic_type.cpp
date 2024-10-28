@@ -29,12 +29,10 @@ int main() {
     // char to int
     int idx = bb[0] - '0';
     cout << "idx:" << idx << endl;
-    // char to string
+    // vector<char> to string
     vector<char> ch_vec = {'a','b','c','d','e'};
-    string res_string = "";
-    for(auto pt=ch_vec.begin();pt!=ch_vec.end();pt++) {
-        res_string += *pt;
-    }
+    // 注意：一定要使用string的构造函数转换，否则时间复杂度是O(n^2)!
+    string res_string(ch_vec.begin(), ch_vec.end());
     cout << res_string << endl;
     // string also has iterators, and we can call std::reverse() to reverse it
     reverse(res_string.begin(), res_string.end());
